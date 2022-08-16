@@ -7,14 +7,14 @@ contract StoreNft{
     address[] users;
     uint256[] tokenId;
 
-    mapping(address=> uint256[]) public userdata;
+    mapping(address=> uint256[]) public userToken;
 
 
 
     function storeNftData(uint256 _nfttoken) public{
 
           
-        userdata[msg.sender].push(_nfttoken);
+        userToken[msg.sender].push(_nfttoken);
         tokenId.push(_nfttoken);
         
             
@@ -22,7 +22,7 @@ contract StoreNft{
 
     function getParticularUserStoreNftata() public view returns(uint[] memory){
 
-        return userdata[msg.sender];
+        return userToken[msg.sender];
 
     }
     // function msgSender() public view returns(address){

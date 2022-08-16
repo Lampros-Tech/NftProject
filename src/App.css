@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.nftImageBox{
+
+  height:352px;
+  width:302px;
+  border: 1px solid red;
+  background-color: black;
+  color: white;
+  float: left;
+  margin-left: 30px;
+  font-size:10pt;
+}
+
+.nftImage{
+
+  height:300px;
+  width:300px;
+
+
+}
